@@ -15,7 +15,6 @@
         <link href="css/plugins/animate.css" rel="stylesheet">
         <link href="css/plugins/main.css" rel="stylesheet">
         <link href="css/plugins/responsive.css" rel="stylesheet">
-        <link href="css/plugins/easy-autocomplete.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- Icon -->
@@ -191,7 +190,8 @@
 
         <img src="images/load-img.gif" class="center-block img-responsive hidden" id="img-load">
         <section class="box-content">
-            <div class="load-go" data-href="{{ url('home') }}" data-img-load="#img-load"></div>
+            <h1 class="text-center">Página não encontrada</h1>
+            <img src="images/404.png" class="center-block img-responsive" />
         </section>
 
         <footer id="footer">
@@ -274,7 +274,6 @@
         <script src="js/plugins/jquery.prettyPhoto.js"></script>
         <script src="js/plugins/main.js"></script>
         <script src="js/plugins/ajaxPages.js"></script>
-        <script src="js/plugins/jquery.easy-autocomplete.min.js"></script>
         <script src="js/script.js"></script>
 
     </body>

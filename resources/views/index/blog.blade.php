@@ -1,1 +1,1 @@
-Blog
+<h1 class="text-center">TESTE</h1>
