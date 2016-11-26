@@ -32,4 +32,8 @@ class HomeController extends Controller {
         return view('index.list-products')->with('products', Products::all());
     }
 
+    public function cart() {
+        return view('index.cart');
+    }
+
 }

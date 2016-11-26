@@ -21,3 +21,5 @@ Route::get('/contatos', 'Web\HomeController@contatos');
 Route::get('/moda-do-momento', 'Web\HomeController@modaDoMomento');
 
 Route::get('/list-products', 'Web\HomeController@listProducts');
+
+Route::get('/cart', 'Web\HomeController@cart');

@@ -7,20 +7,20 @@
                         <img src="{{ $row->img }}" />
                         <h2>R$ {{ $row->price }}</h2>
                         <p>{{ $row->title }}</p>
-                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar para o Carrinho</a>
+                        <button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar para o Carrinho</button>
                     </div>
                     <div class="product-overlay">
                         <div class="overlay-content">
                             <h2>R$ {{ $row->price }}</h2>
                             <p>{{ $row->title }}</p>
-                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar para o Carrinho</a>
+                            <button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar para o Carrinho</button>
                         </div>
                     </div>
                 </div>
                 <div class="choose">
                     <ul class="nav nav-pills nav-justified">
-                        <li><a href="#"><i class="fa fa-plus-square"></i>Adicionar para os Favoritos</a></li>
-                        <li><a href="#"><i class="fa fa-plus-square"></i>Adicionar na Lista de Desejos</a></li>
+                        <li><a><i class="fa fa-plus-square"></i>Adicionar para os Favoritos</a></li>
+                        <li><a><i class="fa fa-plus-square"></i>Adicionar na Lista de Desejos</a></li>
                     </ul>
                 </div>
             </div>

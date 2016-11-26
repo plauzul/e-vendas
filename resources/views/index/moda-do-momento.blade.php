@@ -1,1 +1,1 @@
-Moda do Momento
+<h1 class="text-center">Moda do Momento</h1>

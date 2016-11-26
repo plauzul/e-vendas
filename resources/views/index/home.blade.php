@@ -116,8 +116,7 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-						
+						</div>						
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
@@ -214,9 +213,8 @@
 												<img src="images/recommend1.jpg" alt="" />
 												<h2>R$ 76</h2>
 												<p>Camisa Polo Listrada - Feminina - Preto/Branca</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -227,9 +225,8 @@
 												<img src="images/recommend2.jpg" alt="" />
 												<h2>R$ 76</h2>
 												<p>Camisa XingLing China Vermelha - Feminina</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -240,9 +237,8 @@
 												<img src="images/recommend3.jpg" alt="" />
 												<h2>R$ 86</h2>
 												<p>Camisa Sexy Rose - Feminina</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -255,9 +251,8 @@
 												<img src="images/recommend1.jpg" alt="" />
 												<h2>R$ 76</h2>
 												<p>Camisa Polo Listrada - Feminina - Preto/Branca</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -268,9 +263,8 @@
 												<img src="images/recommend2.jpg" alt="" />
 												<h2>R$ 76</h2>
 												<p>Camisa XingLing China Vermelha - Feminina</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -281,9 +275,8 @@
 												<img src="images/recommend3.jpg" alt="" />
 												<h2>R$ 86</h2>
 												<p>Camisa Sexy Rose - Feminina</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</a>
-											</div>
-											
+												<button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar no Carrinho</button>
+											</div>											
 										</div>
 									</div>
 								</div>

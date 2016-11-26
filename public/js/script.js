@@ -1,6 +1,7 @@
 $(function() {
 	"use strict";
 
+    //adiciono o novo menu
     setInterval(() => {
         if($(document).scrollTop() >= 200) {
             $("#menu").css("margin-top", "0");
@@ -9,6 +10,13 @@ $(function() {
         }
     }, 1);
 
+    //adiciono o numero de pedidos ao carrinho
+    setInterval(() => {
+        $("#count-itens-cart1").html(cart.countCart());
+        $("#count-itens-cart2").html(cart.countCart());
+    }, 1);
+
+    //auto complete para o input de search
     $("#search-product").easyAutocomplete({
         url: "http://localhost/e-vendas/public/api/products",
 
@@ -35,6 +43,7 @@ $(function() {
         }
     });
 
+    //filtro os produtos a parti do valor do input search
     $("#search-product").keyup(function(e) {
         $('.box-product[data-title]').each(function(index, value) {
             var regexp = new RegExp($("#search-product").val(), "gi");
@@ -47,4 +56,20 @@ $(function() {
             }
         });
     });
+
+    //adiciono item ao carrinhos
+    $(document).on('click', '.add-to-cart', function(e) {
+        cart.addCart({
+            id: $(this).parent().parent().parent().parent().parent().data("id")
+        });
+    });
+
+    //removo item do carrinho
+    $(document).on('click', '#remove-cart', function(e) {
+        e.preventDefault();
+
+        $($(this).parent().parent()[0]).remove();
+
+        cart.removeCart({id: $(this).parent().parent().data("id")});
+    })
 });

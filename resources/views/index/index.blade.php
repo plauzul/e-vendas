@@ -65,7 +65,7 @@
                                     <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
                                     <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
                                     <li><a href="#"><i class="fa fa-crosshairs"></i> Confira</a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
+                                    <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart1"></span></a></li>
                                     <li><a href="#" data-toggle="modal" data-target="#modal-login"><i class="fa fa-lock"></i> Login</a></li>
                                 </ul>
                             </div>
@@ -149,7 +149,7 @@
                     <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
                     <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
                     <li><a href="#"><i class="fa fa-crosshairs"></i> Confira</a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
+                    <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart2"></span></a></li>
                     <li><a href="#" data-toggle="modal" data-target="#modal-login"><i class="fa fa-lock"></i> Login</a></li>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -276,6 +276,7 @@
         <script src="js/plugins/ajaxPages.js"></script>
         <script src="js/plugins/jquery.easy-autocomplete.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/cart.js"></script>
 
     </body>
 </html>
