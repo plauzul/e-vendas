@@ -4,7 +4,7 @@
 
 #### Pastas e arquivos do projeto final
 
-Como usar
+Como usar:
 
 *   Primeiro de um **git clone https://github.com/plauzul/e-vendas.git**
 *   Depois do projeto baixado é so dar um **componser install** para baixar as dependencias do projeto
