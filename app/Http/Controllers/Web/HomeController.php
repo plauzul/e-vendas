@@ -28,6 +28,10 @@ class HomeController extends Controller {
         return view('index.moda-do-momento');
     }
 
+    public function login() {
+        return view('index.login');
+    }
+
     public function listProducts() {
         return view('index.list-products')->with('products', Products::all());
     }

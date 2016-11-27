@@ -34,7 +34,6 @@
 								<img src="images/pricing.png"  class="pricing" alt="" />
 							</div>
 						</div>
-						
 						<div class="item">
 							<div class="col-sm-6">
 								<h1><span>E</span>-Vendas</h1>
@@ -46,8 +45,7 @@
 								<img src="images/girl3.jpg" class="girl img-responsive" alt="" />
 								<img src="images/pricing.png" class="pricing" alt="" />
 							</div>
-						</div>
-						
+						</div>						
 					</div>
 					
 					<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -178,16 +176,7 @@
 								<li><a href="#"> <span class="pull-right">(0)</span>Valentino</a></li>
 							</ul>
 						</div>
-					</div><!--/Marcas_dos_Produtos-->
-					
-					<div class="price-range"><!--Faixa_de_Preço-->
-						<h2>Faixa de Preço</h2>
-						<div class="well text-center">
-							<input type="text" class="span2" value="" data-slider-min="0" data-slider-max="2400" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-							<b class="pull-left">R$ 0</b> <b class="pull-right">R$ 2400</b>
-						</div>
-					</div><!--/Faixa_de_Preço-->
-				
+					</div><!--/Marcas_dos_Produtos-->				
 				</div>
 			</div>
 			
@@ -205,7 +194,7 @@
 					
 					<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
-							<div class="item active">	
+							<div class="item active">
 								<div class="col-sm-4">
 									<div class="product-image-wrapper">
 										<div class="single-products">

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>E-Vendas</title>
 
@@ -20,6 +21,12 @@
 
         <!-- Icon -->
         <link rel="icon" href="images/favicon.png">
+
+        <script>
+            //GLOBAL VARS
+            var url = "{{ url('/') }}/";
+            var token = "{{ csrf_token() }}";
+        </script>
 
     </head>
     <body>
@@ -62,11 +69,12 @@
                         <div class="col-sm-8">
                             <div class="shop-menu pull-right">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
-                                    <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
-                                    <li><a href="#"><i class="fa fa-crosshairs"></i> Confira</a></li>
+                                    @if(Auth::check())
+                                        <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
+                                        <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
+                                    @endif
                                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart1"></span></a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#modal-login"><i class="fa fa-lock"></i> Login</a></li>
+                                    <li><a class="load" href="" data-href="{{ url('login') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-lock"></i> Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,16 +97,7 @@
                             <div class="mainmenu pull-left">
                                 <ul class="nav navbar-nav collapse navbar-collapse">
                                     <li><a class="load" href="" data-href="{{ url('home') }}" data-content=".box-content" data-img-load="#img-load">Inicio</a></li>
-                                    <li class="dropdown"><a href="#">Loja<i class="fa fa-angle-down"></i></a>
-                                        <ul role="menu" class="sub-menu">
-                                            <li><a href="#">Produtos</a></li>
-                                            <li><a href="#">Detalhes do Produto</a></li> 
-                                            <li><a href="#">Confira</a></li> 
-                                            <li><a href="#">Carrinho</a></li> 
-                                            <li><a href="#">Login</a></li> 
-                                        </ul>
-                                    </li> 
-                                    <li class="dropdown"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-content" data-img-load="#img-load">Blog</a></li> 
+                                    <li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-content" data-img-load="#img-load">Blog</a></li> 
                                     <li><a class="load" href="" data-href="{{ url('moda-do-momento') }}" data-content=".box-content" data-img-load="#img-load">Moda do Momento</a></li>
                                     <li><a class="load" href="" data-href="{{ url('contatos') }}" data-content=".box-content" data-img-load="#img-load">Contatos</a></li>
                                 </ul>
@@ -131,63 +130,28 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a class="load" href="" data-href="{{ url('home') }}" data-content=".box-content" data-img-load="#img-load">Inicio <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Loja <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Produtos</a></li>
-                            <li><a href="#">Detalhes do Produto</a></li>
-                            <li><a href="#">Confira</a></li>
-                            <li><a href="#">Carrinho</a></li>
-                            <li><a href="#">Login</a></li>
-                        </ul>
-                    </li>
                     <li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-content" data-img-load="#img-load">Blog</a></li>
                     <li><a class="load" href="" data-href="{{ url('moda-do-momento') }}" data-content=".box-content" data-img-load="#img-load">Moda do Momento</a></li>
                     <li><a class="load" href="" data-href="{{ url('contatos') }}" data-content=".box-content" data-img-load="#img-load">Contatos</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
-                    <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
-                    <li><a href="#"><i class="fa fa-crosshairs"></i> Confira</a></li>
+                    @if(Auth::check())
+                        <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
+                        <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
+                    @endif
                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart2"></span></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#modal-login"><i class="fa fa-lock"></i> Login</a></li>
-                    <form class="navbar-form navbar-left">
+                    <li><a class="load" href="" data-href="{{ url('login') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-lock"></i> Login</a></li>
+                    <div class="navbar-form navbar-left">
                         <div class="form-group">
                             <div class="search_box pull-right">
                                 <input type="text" placeholder="Procurar" id="search-product" />
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
-        <!-- Modal Login -->
-        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Faça Login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email" />
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Senha" />
-                            </div>
-                            <button class="btn btn-block btn-primary">Login</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <img src="images/load-img.gif" class="center-block img-responsive hidden" id="img-load">
         <section class="box-content">
