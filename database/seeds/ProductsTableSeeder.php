@@ -40,5 +40,25 @@ class ProductsTableSeeder extends Seeder {
             'brand' => 'gucci',
             'state' => 'sale'
         ]);
+
+        Products::create([
+            'categoria' => 'dolce-e-cabbana',
+            'img' => 'images/product4.jpg',
+            'price' => '182,90',
+            'title' => 'Vestido Style Good - Dolce e Cabbana',
+            'description' => 'Compre já essa perfeição de vestido da dolce e cabbana e arrase',
+            'brand' => 'dolce-e-cabbana',
+            'state' => ''
+        ]);
+
+        Products::create([
+            'categoria' => 'gucci',
+            'img' => 'images/product6.jpg',
+            'price' => '50',
+            'title' => 'Camiseta Branca - Gucci',
+            'description' => 'Linda camisa branca, para você mostra a perfeição das roupas Gucci',
+            'brand' => 'gucci',
+            'state' => ''
+        ]);
     }
 }

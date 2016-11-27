@@ -67,6 +67,11 @@
 					<div class="panel-group category-products" id="accordian"><!--Categoria_dos_Produtos-->
 						<div class="panel panel-default">
 							<div class="panel-heading">
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/all') }}" data-content=".box-itens" data-img-load="#img-load-products">Todos</a></h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
 										<span class="badge pull-right"><i class="fa fa-plus"></i></span>
@@ -163,13 +168,13 @@
 						<h2>Marcas</h2>
 						<div class="brands-name">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#"> <span class="pull-right">(0)</span>Armani</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Dolce e Cabbana</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Orient</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Ralph Lauren</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Calvin Klein</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Gucci</a></li>
-								<li><a href="#"> <span class="pull-right">(0)</span>Valentino</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['armani'] }})</span>Armani</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['dolceCabbana'] }})</span>Dolce e Cabbana</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['orient'] }})</span>Orient</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['ralphLauren'] }})</span>Ralph Lauren</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['calvinKlein'] }})</span>Calvin Klein</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['gucci'] }})</span>Gucci</a></li>
+								<li><a href="#"> <span class="pull-right">({{ $brands['valentino'] }})</span>Valentino</a></li>
 							</ul>
 						</div>
 					</div><!--/Marcas_dos_Produtos-->				

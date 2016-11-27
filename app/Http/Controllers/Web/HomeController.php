@@ -13,13 +13,25 @@ class HomeController extends Controller {
     }
 
     public function home($categoria = null) {
+        $brands = [
+            'armani' => Products::where('brand', 'armani')->count(),
+            'dolceCabbana' => Products::where('brand', 'dolce-e-cabbana')->count(),
+            'orient' => Products::where('brand', 'dolce-e-cabbana')->count(),
+            'ralphLauren' => Products::where('brand', 'ralph-lauren')->count(),
+            'calvinKlein' => Products::where('brand', 'calvin-klein')->count(),
+            'gucci' => Products::where('brand', 'gucci')->count(),
+            'valentino' => Products::where('brand', 'valentino')->count()
+        ];
+
         if(!$categoria) {
-            return view('home.home');
+            return view('home.home')->with('brands', $brands);
+        }elseif($categoria == "all") {
+            $products = Products::all();
+        } else {
+            $products = Products::where('categoria', $categoria)->get();
         }
 
-        $products = Products::where('categoria', $categoria)->get();
-        
-        return view('home.list-products')->with('products', $products);        
+        return view('home.list-products')->with('products', $products);
     }
 
     public function blog() {

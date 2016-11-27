@@ -153,7 +153,7 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-        <img src="images/load-img.gif" class="center-block img-responsive hidden" id="img-load">
+        <img src="images/load-img.gif" class="center-block img-responsive" id="img-load">
         <section class="box-content">
             <div class="load-go" data-href="{{ url('home') }}" data-img-load="#img-load"></div>
         </section>

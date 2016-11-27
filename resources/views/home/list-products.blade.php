@@ -16,6 +16,9 @@
                             <button class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar para o Carrinho</button>
                         </div>
                     </div>
+                    @if($row->state)
+                        <img src="images/{{ $row->state }}.png" class="new">
+                    @endif                    
                 </div>
                 <div class="choose">
                     <ul class="nav nav-pills nav-justified">
