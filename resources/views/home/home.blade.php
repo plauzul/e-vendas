@@ -15,7 +15,6 @@
 								<h1><span>E</span>-Vendas</h1>
 								<h2>As Melhores Modas do Momento</h2>
 								<p>Escolha a moda que mais combine com você é seja feliz comprando o que á de melhor para você e com os melhores preços do mercado! </p>
-								<button type="button" class="btn btn-default get">Click e Confira</button>
 							</div>
 							<div class="col-sm-6">
 								<img src="images/girl1.jpg" class="girl img-responsive" alt="" />
@@ -26,8 +25,7 @@
 							<div class="col-sm-6">
 								<h1><span>E</span>-Vendas</h1>
 								<h2>Os Melhores Estilos</h2>
-								<p>Escolha seu estilo é seja feliz comprando o que á de melhor para você e com os melhores preços do mercado! click e confira... </p>
-								<button type="button" class="btn btn-default get">Click e Confira</button>
+								<p>Escolha seu estilo é seja feliz comprando o que á de melhor para você e com os melhores preços do mercado!</p>
 							</div>
 							<div class="col-sm-6">
 								<img src="images/girl2.jpg" class="girl img-responsive" alt="" />
@@ -38,8 +36,7 @@
 							<div class="col-sm-6">
 								<h1><span>E</span>-Vendas</h1>
 								<h2>Vai para algum local Importante ?</h2>
-								<p>Escolha um vestido TOP de linha é seja feliz comprando o que á de melhor para você e com os melhores preços do mercado! click e confira... </p>
-								<button type="button" class="btn btn-default get">Click e Confira</button>
+								<p>Escolha um vestido TOP de linha é seja feliz comprando o que á de melhor para você e com os melhores preços do mercado!</p>
 							</div>
 							<div class="col-sm-6">
 								<img src="images/girl3.jpg" class="girl img-responsive" alt="" />
@@ -80,11 +77,11 @@
 							<div id="sportswear" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Nike </a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Mizzuno </a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Adidas </a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Puma</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">ASICS </a></li>
+										<li><a class="load" href="" data-href="{{ url('home/nike') }}" data-content=".box-itens" data-img-load="#img-load-products">Nike </a></li>
+										<li><a class="load" href="" data-href="{{ url('home/mizzuno') }}" data-content=".box-itens" data-img-load="#img-load-products">Mizzuno </a></li>
+										<li><a class="load" href="" data-href="{{ url('home/adidas') }}" data-content=".box-itens" data-img-load="#img-load-products">Adidas </a></li>
+										<li><a class="load" href="" data-href="{{ url('home/puma') }}" data-content=".box-itens" data-img-load="#img-load-products">Puma</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/asics') }}" data-content=".box-itens" data-img-load="#img-load-products">ASICS </a></li>
 									</ul>
 								</div>
 							</div>
@@ -101,16 +98,16 @@
 							<div id="mens" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Oakley</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">7 Mares</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Orient</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Mormai</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Vans</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Armani</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Hollister</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Polo</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Calvin Klein</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Ralph Lauren</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/oakley') }}" data-content=".box-itens" data-img-load="#img-load-products">Oakley</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/7-mares') }}" data-content=".box-itens" data-img-load="#img-load-products">7 Mares</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/orient') }}" data-content=".box-itens" data-img-load="#img-load-products">Orient</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/mormai') }}" data-content=".box-itens" data-img-load="#img-load-products">Mormai</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/vans') }}" data-content=".box-itens" data-img-load="#img-load-products">Vans</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/armani') }}" data-content=".box-itens" data-img-load="#img-load-products">Armani</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/hollister') }}" data-content=".box-itens" data-img-load="#img-load-products">Hollister</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/polo') }}" data-content=".box-itens" data-img-load="#img-load-products">Polo</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/calvin-klein') }}" data-content=".box-itens" data-img-load="#img-load-products">Calvin Klein</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/ralph-lauren') }}" data-content=".box-itens" data-img-load="#img-load-products">Ralph Lauren</a></li>
 									</ul>
 								</div>
 							</div>
@@ -127,38 +124,37 @@
 							<div id="womens" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Kenzo Jeans</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Gucci</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Valentino</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Polo</a></li>
-										<li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Dolce e Cabbana</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/kenzo-jeans') }}" data-content=".box-itens" data-img-load="#img-load-products">Kenzo Jeans</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/gucci') }}" data-content=".box-itens" data-img-load="#img-load-products">Gucci</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/valentino') }}" data-content=".box-itens" data-img-load="#img-load-products">Valentino</a></li>
+										<li><a class="load" href="" data-href="{{ url('home/dolce-e-cabbana') }}" data-content=".box-itens" data-img-load="#img-load-products">Dolce e Cabbana</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Criança</a></h4>
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/crianca') }}" data-content=".box-itens" data-img-load="#img-load-products">Criança</a></h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Fashion</a></h4>
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/fashion') }}" data-content=".box-itens" data-img-load="#img-load-products">Fashion</a></h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Para Familia</a></h4>
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/para-familia') }}" data-content=".box-itens" data-img-load="#img-load-products">Para Familia</a></h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Acessorios</a></h4>
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/acessorios') }}" data-content=".box-itens" data-img-load="#img-load-products">Acessorios</a></h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-itens" data-img-load="#img-load-products">Shorts</a></h4>
+								<h4 class="panel-title"><a class="load" href="" data-href="{{ url('home/shorts') }}" data-content=".box-itens" data-img-load="#img-load-products">Shorts</a></h4>
 							</div>
 						</div>
 					</div><!--/Categoria_dos_Produtos-->

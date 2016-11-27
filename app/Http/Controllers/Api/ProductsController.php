@@ -33,8 +33,8 @@ class ProductsController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id) {
-        return Products::find($id);
+    public function show(Products $products) {
+        return $products;
     }
 
     /**
@@ -54,7 +54,7 @@ class ProductsController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id) {
-        //
+    public function destroy(Products $products) {
+        Products::destroy($products->id);
     }
 }

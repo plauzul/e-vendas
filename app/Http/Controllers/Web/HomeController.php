@@ -9,35 +9,41 @@ use App\Products;
 class HomeController extends Controller {
 
     public function index() {
-        return view('index.index');
+        return view('home.index');
     }
 
-    public function home() {
-        return view('index.home');
+    public function home($categoria = null) {
+        if(!$categoria) {
+            return view('home.home');
+        }
+
+        $products = Products::where('categoria', $categoria)->get();
+        
+        return view('home.list-products')->with('products', $products);        
     }
 
     public function blog() {
-        return view('index.blog');
+        return view('home.blog');
     }
 
     public function contatos() {
-        return view('index.contatos');
+        return view('home.contatos');
     }
 
     public function modaDoMomento() {
-        return view('index.moda-do-momento');
+        return view('home.moda-do-momento');
     }
 
     public function login() {
-        return view('index.login');
+        return view('home.login');
     }
 
     public function listProducts() {
-        return view('index.list-products')->with('products', Products::all());
+        return view('home.list-products')->with('products', Products::all());
     }
 
     public function cart() {
-        return view('index.cart');
+        return view('home.cart');
     }
 
 }

@@ -12,13 +12,15 @@
 */
 Route::post('/authenticate', 'Auth\LoginController@authenticate');
 
-Route::post('/logout', 'Auth\LoginController@logout');
+Route::get('/logout', 'Auth\LoginController@logout');
+
+Route::post('/register', 'Auth\RegisterController@register');
 
 Route::get('/login', 'Web\HomeController@login');
 
 Route::get('/', 'Web\HomeController@index');
 
-Route::get('/home', 'Web\HomeController@home');
+Route::get('/home/{categoria?}', 'Web\HomeController@home');
 
 Route::get('/blog', 'Web\HomeController@blog');
 
@@ -29,3 +31,5 @@ Route::get('/moda-do-momento', 'Web\HomeController@modaDoMomento');
 Route::get('/list-products', 'Web\HomeController@listProducts');
 
 Route::get('/cart', 'Web\HomeController@cart');
+
+Route::get('/account', 'Web\AccountController@index');
