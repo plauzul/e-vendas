@@ -33,8 +33,8 @@ class ProductsController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Products $products) {
-        return $products;
+    public function show($id) {
+        return Products::find($id);
     }
 
     /**

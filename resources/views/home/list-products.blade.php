@@ -17,15 +17,16 @@
                         </div>
                     </div>
                     @if($row->state)
-                        <img src="images/{{ $row->state }}.png" class="new">
+                        <img src="images/{{ $row->state }}.png" class="{{ $row->state }}">
                     @endif                    
                 </div>
-                <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                        <li><a><i class="fa fa-plus-square"></i>Adicionar para os Favoritos</a></li>
-                        <li><a><i class="fa fa-plus-square"></i>Adicionar na Lista de Desejos</a></li>
-                    </ul>
-                </div>
+                @if(Auth::check())
+                    <div class="choose">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="" id="add-favorites" ><i class="fa fa-plus-square"></i>Adicionar para os Favoritos</a></li>
+                        </ul>
+                    </div>
+                @endif
             </div>
         </div>
     @empty

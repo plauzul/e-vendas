@@ -16,6 +16,12 @@ $(function() {
         $("#count-itens-cart2").html(cart.countCart());
     }, 1);
 
+    //adiciono o numero de favoritos
+    setInterval(() => {
+        $("#count-favorite1").html(cart.countFavorite());
+        $("#count-favorite2").html(cart.countFavorite());
+    }, 1);
+
     //auto complete para o input de search
     $("#search-product").easyAutocomplete({
         url: "http://localhost/e-vendas/public/api/products",
@@ -72,4 +78,22 @@ $(function() {
 
         cart.removeCart({id: $(this).parent().parent().data("id")});
     })
+
+    //adiciono item aos favoritos
+    $(document).on('click', "#add-favorites", function(e) {
+        e.preventDefault();
+
+        cart.addFavorite({
+            id: $(this).parent().parent().parent().parent().parent().data("id")
+        });
+    });
+
+    //removo um favoritos
+    $(document).on('click', '#remove-favorite', function(e) {
+        e.preventDefault();
+
+        $($(this).parent().parent()[0]).remove();
+
+        cart.removeFavorite({id: $(this).parent().parent().data("id")});
+    });
 });

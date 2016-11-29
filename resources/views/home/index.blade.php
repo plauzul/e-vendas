@@ -48,8 +48,6 @@
                                 <ul class="nav navbar-nav">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul>
                             </div>
@@ -70,8 +68,8 @@
                             <div class="shop-menu pull-right">
                                 <ul class="nav navbar-nav">
                                     @if(Auth::check())
-                                        <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
-                                        <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
+                                        <li><a href="account"><i class="fa fa-user"></i> Conta</a></li>
+                                        <li><a class="load" href="" data-href="{{ url('favorites') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-star"></i> Favoritos <span class="badge" id="count-favorite1"></span></a></li>
                                     @endif
                                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart1"></span></a></li>
                                     <li><a class="load" href="" data-href="{{ url('login') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-lock"></i> Login</a></li>
@@ -129,15 +127,15 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a class="load" href="" data-href="{{ url('home') }}" data-content=".box-content" data-img-load="#img-load">Inicio <span class="sr-only">(current)</span></a></li>
+                    <li><a class="load" href="" data-href="{{ url('home') }}" data-content=".box-content" data-img-load="#img-load">Inicio <span class="sr-only">(current)</span></a></li>
                     <li><a class="load" href="" data-href="{{ url('blog') }}" data-content=".box-content" data-img-load="#img-load">Blog</a></li>
                     <li><a class="load" href="" data-href="{{ url('moda-do-momento') }}" data-content=".box-content" data-img-load="#img-load">Moda do Momento</a></li>
                     <li><a class="load" href="" data-href="{{ url('contatos') }}" data-content=".box-content" data-img-load="#img-load">Contatos</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(Auth::check())
-                        <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
-                        <li><a href="#"><i class="fa fa-star"></i> Favoritos</a></li>
+                        <li><a href="account"><i class="fa fa-user"></i> Conta</a></li>
+                        <li><a class="load" href="" data-href="{{ url('favorites') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-star"></i> Favoritos <span class="badge" id="count-favorite2"></span></a></li>
                     @endif
                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart2"></span></a></li>
                     <li><a class="load" href="" data-href="{{ url('login') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-lock"></i> Login</a></li>
@@ -174,19 +172,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-2">
-                            <div class="single-widget">
-                                <h2>Acesso Rápido</h2>
-                                <ul class="nav nav-pills nav-stacked">
-                                    <li><a href="#">Camiseta</a></li>
-                                    <li><a href="#">Homens</a></li>
-                                    <li><a href="#">Mulheres</a></li>
-                                    <li><a href="#">Cartões de Presente</a></li>
-                                    <li><a href="#">Sapatos</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 col-sm-offset-1">
                             <div class="single-widget">
                                 <h2>Políticas</h2>
                                 <ul class="nav nav-pills nav-stacked">
@@ -198,7 +184,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-2 col-sm-offset-1">
                             <div class="single-widget">
                                 <h2>Sobre o E-vendas</h2>
                                 <ul class="nav nav-pills nav-stacked">

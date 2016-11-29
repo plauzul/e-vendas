@@ -21,10 +21,10 @@
 </section><!--/cart_items-->
 
 <script>
-    var itens = JSON.parse(sessionStorage.getItem("itens"));
+    var favorite = JSON.parse(localStorage.getItem("favorite"));
 
-    if(itens && itens[0]) {
-        itens.forEach(function(value) {
+    if(favorite && favorite[0]) {
+        favorite.forEach(function(value) {
             $.get("http://localhost/e-vendas/public/api/products/" + value.id, function(data) {
                 $("#tbody").append(`
                     <tr data-id="`+data.id+`">
@@ -49,7 +49,7 @@
                             <p class="cart_total_price">`+data.price+`</p>
                         </td>
                         <td class="cart_delete">
-                            <a class="cart_quantity_delete" href="" id="remove-cart"><i class="fa fa-times"></i></a>
+                            <a class="cart_quantity_delete" href="" id="remove-favorite"><i class="fa fa-times"></i></a>
                         </td>
                     </tr>
                 `);

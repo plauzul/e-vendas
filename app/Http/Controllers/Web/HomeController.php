@@ -58,4 +58,12 @@ class HomeController extends Controller {
         return view('home.cart');
     }
 
+    public function productDetails(Products $products) {
+        return view('home.product-details')->with(['product' => $products]);
+    }
+
+    public function favorites() {
+        return view('home.favorites');
+    }
+
 }
