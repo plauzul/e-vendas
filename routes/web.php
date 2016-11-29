@@ -36,4 +36,6 @@ Route::get('/product-details/{products}', 'Web\HomeController@productDetails');
 
 Route::get('/favorites', 'Web\HomeController@favorites');
 
+Route::get('/recommended-items', 'Web\HomeController@recommendedItems');
+
 Route::get('/account', 'Web\AccountController@index');

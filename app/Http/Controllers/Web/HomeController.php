@@ -66,4 +66,8 @@ class HomeController extends Controller {
         return view('home.favorites');
     }
 
+    public function recommendedItems() {
+        return view('home.recommended-items');
+    }
+
 }

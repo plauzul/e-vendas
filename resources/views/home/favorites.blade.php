@@ -16,7 +16,7 @@
                 </tbody>
             </table>
         </div>
-        <p><button class="btn btn-primary btn-lg">Ir para o caixa</button></p>
+        <p><button class="btn btn-primary btn-lg">Adicionar ao carrinho</button></p>
     </div>
 </section><!--/cart_items-->
 
@@ -58,7 +58,7 @@
     } else {
         $(tbody).html(`
             <tr>
-                <td colspan="6"><h1 class="text-center">Nenhum iten encontrado.</h1></td>
+                <td colspan="6"><h1 class="text-center">Nenhum item encontrado.</h1></td>
             </tr>
         `);
     }

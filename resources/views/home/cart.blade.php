@@ -36,7 +36,7 @@
                             <p>`+data.description+`</p>
                         </td>
                         <td class="cart_price">
-                            <p>`+data.price+`</p>
+                            <p>R$ `+data.price+`</p>
                         </td>
                         <td class="cart_quantity">
                             <div class="cart_quantity_button">
@@ -46,7 +46,7 @@
                             </div>
                         </td>
                         <td class="cart_total">
-                            <p class="cart_total_price">`+data.price+`</p>
+                            <p class="cart_total_price">R$ `+data.price+`</p>
                         </td>
                         <td class="cart_delete">
                             <a class="cart_quantity_delete" href="" id="remove-cart"><i class="fa fa-times"></i></a>
@@ -58,7 +58,7 @@
     } else {
         $(tbody).html(`
             <tr>
-                <td colspan="6"><h1 class="text-center">Nenhum iten encontrado.</h1></td>
+                <td colspan="6"><h1 class="text-center">Nenhum item encontrado.</h1></td>
             </tr>
         `);
     }
