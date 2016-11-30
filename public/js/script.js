@@ -84,6 +84,7 @@ $(function() {
         e.preventDefault();
 
         cart.addFavorite({
+            id_user: 10,
             id: $(this).parent().parent().parent().parent().parent().data("id")
         });
     });

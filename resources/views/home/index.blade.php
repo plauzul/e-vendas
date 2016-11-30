@@ -68,7 +68,7 @@
                             <div class="shop-menu pull-right">
                                 <ul class="nav navbar-nav">
                                     @if(Auth::check())
-                                        <li><a href="account"><i class="fa fa-user"></i> Conta</a></li>
+                                        <li><a href="account"> <i class="fa fa-user"></i> {{ Auth::user()->name }}</a></li>
                                         <li><a class="load" href="" data-href="{{ url('favorites') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-star"></i> Favoritos <span class="badge" id="count-favorite1"></span></a></li>
                                     @endif
                                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart1"></span></a></li>
@@ -83,7 +83,7 @@
             <div class="header-bottom"><!--header-botão-->
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-9">
+                        <div class="col-sm-12">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Alternar Navegação</span>
@@ -99,11 +99,6 @@
                                     <li><a class="load" href="" data-href="{{ url('moda-do-momento') }}" data-content=".box-content" data-img-load="#img-load">Moda do Momento</a></li>
                                     <li><a class="load" href="" data-href="{{ url('contatos') }}" data-content=".box-content" data-img-load="#img-load">Contatos</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="search_box pull-right">
-                                <input type="text" placeholder="Procurar" />
                             </div>
                         </div>
                     </div>
@@ -134,7 +129,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(Auth::check())
-                        <li><a href="account"><i class="fa fa-user"></i> Conta</a></li>
+                        <li><a href="account"> <i class="fa fa-user"></i> {{ Auth::user()->name }}</a></li>
                         <li><a class="load" href="" data-href="{{ url('favorites') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-star"></i> Favoritos <span class="badge" id="count-favorite2"></span></a></li>
                     @endif
                     <li><a class="load" href="" data-href="{{ url('cart') }}" data-content=".box-content" data-img-load="#img-load"><i class="fa fa-shopping-cart"></i> Carrinho <span class="badge" id="count-itens-cart2"></span></a></li>
