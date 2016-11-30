@@ -192,7 +192,7 @@
 				
 				<div class="recommended_items"><!--Itens_Recomendados-->
 					<h2 class="title text-center">Itens Recomendados</h2>					
-					<section class="box-itens">
+					<section class="box-itens-recommended">
 						<div class="load-go" data-href="{{url('recommended-items')}}" data-img-load="#img-load-recommended-items"></div>
 					</section>
 					<img src="images/load-img.gif" class="img-responsive center-block" id="img-load-recommended-items">
