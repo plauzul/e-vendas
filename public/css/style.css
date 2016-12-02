@@ -2,3 +2,42 @@
  * @author Paulo Henrique Ramos Ferreira
  * @description Css para estilo global
  */
+
+.navbar-primary {
+    background-color: #FE980F;
+    padding: 10px;
+}
+
+.navbar-primary ul li a {
+    color: white;
+}
+
+.navbar-primary ul li a:hover {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    text-shadow: 2px 1px 2px black;
+}
+
+.navbar-primary ul li a:focus {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-weight: bolder;
+}
+
+.navbar-primary ul li.active {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-weight: bolder;
+}
+
+.navbar-primary .navbar-brand {
+    color: #B4B1AB;
+    font-family: abel;
+    font-size: 30px;
+    text-shadow: 2px 1px 2px black;
+}
+
+.navbar-primary .navbar-brand span {
+    color: #FE980F;
+    text-shadow: 2px 1px 2px black;
+}
