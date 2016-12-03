@@ -168,13 +168,13 @@
 						<h2>Marcas</h2>
 						<div class="brands-name">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a class="load" href="" data-href="{{ url('home/armani') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['armani'] }})</span>Armani</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/dolce-e-cabbana') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['dolceCabbana'] }})</span>Dolce e Cabbana</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/orient') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['orient'] }})</span>Orient</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/ralph-lauren') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['ralphLauren'] }})</span>Ralph Lauren</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/calvin-klein') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['calvinKlein'] }})</span>Calvin Klein</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/gucci') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['gucci'] }})</span>Gucci</a></li>
-								<li><a class="load" href="" data-href="{{ url('home/valentino') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['valentino'] }})</span>Valentino</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/armani') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['armani'] or "0" }})</span>Armani</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/dolce-e-cabbana') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['dolce-e-cabbana'] or "0" }})</span>Dolce e Cabbana</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/orient') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['orient'] or "0" }})</span>Orient</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/ralph-lauren') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['ralph-lauren'] or "0" }})</span>Ralph Lauren</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/calvin-klein') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['calvin-klein'] or "0" }})</span>Calvin Klein</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/gucci') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['gucci'] or "0" }})</span>Gucci</a></li>
+								<li><a class="load" href="" data-href="{{ url('home/valentino') }}" data-content=".box-itens" data-img-load="#img-load-products"><span class="pull-right">({{ $brands['valentino'] or "0" }})</span>Valentino</a></li>
 							</ul>
 						</div>
 					</div><!--/Marcas_dos_Produtos-->				
