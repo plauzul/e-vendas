@@ -10,6 +10,7 @@
 
 .navbar-primary ul li a {
     color: white;
+    background-color: red;
 }
 
 .navbar-primary ul li a:hover {
