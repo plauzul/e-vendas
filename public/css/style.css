@@ -10,7 +10,6 @@
 
 .navbar-primary ul li a {
     color: white;
-    background-color: red;
 }
 
 .navbar-primary ul li a:hover {
@@ -21,14 +20,6 @@
 
 .navbar-primary ul li a:focus {
     background-color: transparent;
-    border-bottom: 1px solid white;
-    font-weight: bolder;
-}
-
-.navbar-primary ul li.active {
-    background-color: transparent;
-    border-bottom: 1px solid white;
-    font-weight: bolder;
 }
 
 .navbar-primary .navbar-brand {
