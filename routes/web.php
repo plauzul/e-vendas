@@ -38,4 +38,6 @@ Route::get('/favorites', 'Web\HomeController@favorites');
 
 Route::get('/recommended-items', 'Web\HomeController@recommendedItems');
 
+Route::get('/payment', 'Web\HomeController@payment');
+
 Route::get('/account', 'Web\AccountController@index');

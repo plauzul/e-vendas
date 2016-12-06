@@ -16,7 +16,7 @@
                 </tbody>
             </table>
         </div>
-        <p><button class="btn btn-primary btn-lg">Ir para o caixa</button></p>
+        <p><button class="btn btn-primary btn-lg" id="go-cashier">Ir para o caixa</button></p>
     </div>
 </section><!--/cart_items-->
 
@@ -27,7 +27,7 @@
         itens.forEach(function(value) {
             $.get("http://localhost/e-vendas/public/api/products/" + value.id, function(data) {
                 $("#tbody").append(`
-                    <tr data-id="`+data.id+`">
+                    <tr data-id="`+data.id+`" data-price="`+data.price+`">
                         <td class="cart_product">
                             <a class="load" href="" data-href="`+url+`product-details/`+data.id+`" data-content=".box-content" data-img-load="#img-load"><img src="`+data.img+`" width="50"></a>
                         </td>

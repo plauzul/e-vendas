@@ -17,6 +17,7 @@
         <link href="css/plugins/main.css" rel="stylesheet">
         <link href="css/plugins/responsive.css" rel="stylesheet">
         <link href="css/plugins/easy-autocomplete.min.css" rel="stylesheet">
+        <link href="css/plugins/iziModal.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- Icon -->
@@ -30,6 +31,8 @@
 
     </head>
     <body>
+
+        <div id="modal"></div>
 
         <header id="header">
             <div class="header_top"><!--header_topo-->
@@ -220,6 +223,7 @@
         <script src="js/plugins/main.js"></script>
         <script src="js/plugins/ajaxPages.js"></script>
         <script src="js/plugins/jquery.easy-autocomplete.min.js"></script>
+        <script src="js/plugins/iziModal.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/cart.js"></script>
 

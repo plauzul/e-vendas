@@ -96,4 +96,64 @@ $(function() {
 
         cart.removeFavorite({id: $(this).parent().parent().data("id")});
     });
+
+    //adiciono mais itens ao carrinho
+    $(document).on('click','.cart_quantity_up', function(e) {
+        e.preventDefault();
+
+        var valueCartQuantity = $(this).parent().find(".cart_quantity_input").val();
+
+        valueCartQuantity++;
+
+        $(this).parent().find(".cart_quantity_input").val(valueCartQuantity);
+
+        $(this).parent().parent().parent().find(".cart_total_price").html(cart.calculePriceOfQuantity({
+            price: $(this).parent().parent().parent().data("price"),
+            valueCartQuantity: valueCartQuantity
+        }));
+    });
+
+    //diminuo itens do carrinho
+    $(document).on('click','.cart_quantity_down', function(e) {
+        e.preventDefault();
+
+        var valueCartQuantity = $(this).parent().find(".cart_quantity_input").val();
+
+        valueCartQuantity--;
+
+        if(valueCartQuantity >= 0) {
+            $(this).parent().find(".cart_quantity_input").val(valueCartQuantity);
+
+            $(this).parent().parent().parent().find(".cart_total_price").html(cart.calculePriceOfQuantity({
+                price: $(this).parent().parent().parent().data("price"),
+                valueCartQuantity: valueCartQuantity
+            }));
+        }
+    });
+
+    //adiciono novo valor ao item apartir da mudança do valor no input
+    $(document).on('keyup', '.cart_quantity_input', function(e) {
+        $(this).parent().parent().parent().find(".cart_total_price").html(cart.calculePriceOfQuantity({
+            price: $(this).parent().parent().parent().data("price"),
+            valueCartQuantity: $(this).val()
+        }));
+    });
+
+    //crio janela para o pagamento
+    $(document).on('click', '#go-cashier', function(e) {
+        $("#modal").iziModal({
+            title: 'Caixa',
+            headerColor: '#FE980F',
+            zindex: 9999,
+            width: 800,
+            padding: 5,
+            onOpening: function(modal) {
+                modal.startLoading();
+                $.get(url + 'payment', function(data) {
+                    $("#modal .iziModal-content").html(data);
+                    modal.stopLoading();
+                });
+            }
+        }).iziModal('open');
+    });
 });

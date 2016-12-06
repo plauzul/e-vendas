@@ -60,6 +60,10 @@ $(function() {
             });
 
             localStorage.setItem("favorite", JSON.stringify(newItens));
+        },
+
+        calculePriceOfQuantity: function(cart) {
+            return "R$ " + cart.valueCartQuantity * cart.price;
         }
     }
 });

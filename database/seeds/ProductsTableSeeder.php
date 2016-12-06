@@ -15,7 +15,7 @@ class ProductsTableSeeder extends Seeder {
             'categoria' => 'valentino',
             'img' => 'images/product1.jpg',
             'price' => '60',
-            'title' => 'Camisa Azul-Esculo - Longa - Valentino',
+            'title' => 'Camisa Azul-Escuro - Longa - Valentino',
             'description' => 'Linda camisa asil, longa, para momentos inesqueciveis de sua vida',
             'brand' => 'valentino',
             'state' => 'new'
